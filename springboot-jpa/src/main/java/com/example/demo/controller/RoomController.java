@@ -7,10 +7,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.model.dto.RoomDto;
 import com.example.demo.service.RoomService;
+
+import jakarta.validation.Valid;
 
 @Controller
 @RequestMapping(value = {"/room","/rooms"})
@@ -25,6 +28,12 @@ public class RoomController {
 		List<RoomDto> roomDtos = roomService.findAllRooms();
 		model.addAttribute("roomDtos", roomDtos);
 		return "room/room";
+	}
+	
+	@PostMapping
+	public String addRoom(@ModelAttribute @Valid RoomDto roomDto) {
+		roomService.addRoom(roomDto);
+		return "redirect:/rooms";
 	}
 
 }
