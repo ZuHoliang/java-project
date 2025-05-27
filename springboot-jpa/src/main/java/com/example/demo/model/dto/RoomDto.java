@@ -16,7 +16,6 @@ public class RoomDto {
 	
 	@NotNull(message = "房間人數不可為空")
 	@Range(min = 0, max = 20, message = "房間人數須介於{min}~{max}")
-	private Integer roomSize;
-	
+	private Integer roomSize;	
 
 }
