@@ -51,7 +51,7 @@ public class RoomController {
 		return "redirect:/rooms";
 	}
 	
-	@PutMapping("/room/update/{roomId}")
+	@PutMapping("/update/{roomId}")
 	public String updateRoom(@PathVariable Integer roomId, @Valid RoomDto roomDto, BindingResult bindingResult) {
 		if(bindingResult.hasErrors()) {
 			return "room/room_update";
