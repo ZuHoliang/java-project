@@ -21,6 +21,10 @@ public class RoomController {
 	@GetMapping
 	public String getRooms(Model model) {
 		RoomDto roomDto = new RoomDto();
+		roomDto.setRoomId(101);
+		roomDto.setRoomName("九零一(L)");
+		roomDto.setRoomSize(16);
+		
 		List<RoomDto> roomDtos = roomService.findAllRooms();
 		model.addAttribute("roomDto", roomDto);
 		model.addAttribute("roomDtos", roomDtos);
