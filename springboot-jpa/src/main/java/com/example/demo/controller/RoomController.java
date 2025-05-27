@@ -35,7 +35,7 @@ public class RoomController {
 	public String addRoom(@ModelAttribute @Valid RoomDto roomDto, BindingResult bindingResult, Model model) {
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("roomDtos", roomService.findAllRooms());
-			return "room/rooms";
+			return "room/room";
 		}
 		
 		roomService.addRoom(roomDto);
