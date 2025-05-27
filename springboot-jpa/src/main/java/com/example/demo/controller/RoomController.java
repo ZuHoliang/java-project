@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.model.dto.RoomDto;
@@ -47,6 +48,16 @@ public class RoomController {
 		}
 		
 		roomService.addRoom(roomDto);
+		return "redirect:/rooms";
+	}
+	
+	@PutMapping("/room/update/{roomId}")
+	public String updateRoom(@PathVariable Integer roomId, @Valid RoomDto roomDto, BindingResult bindingResult) {
+		if(bindingResult.hasErrors()) {
+			return "room/room_update";
+		}
+		
+		roomService.updateRoom(roomId, roomDto);
 		return "redirect:/rooms";
 	}
 
