@@ -32,7 +32,7 @@ public class RoomServiceImpl implements RoomService{
 	}
 
 	@Override
-	public RoomDto getBoomById(Integer roomId) {
+	public RoomDto getRoomById(Integer roomId) {
 		Room room = roomRepository.findById(roomId)
 				.orElseThrow(() -> new RoomNotFoundException("找不到會議室:RoomID=" + roomId));
 		return roomMapper.toDto(room);

@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -29,6 +30,13 @@ public class RoomController {
 		List<RoomDto> roomDtos = roomService.findAllRooms();
 		model.addAttribute("roomDtos", roomDtos);
 		return "room/room";
+	}
+	
+	@GetMapping("/{roomId}")
+	public String getRoom(@PathVariable Integer roomId, Model model) {
+		RoomDto roomDto = roomService.getRoomById(roomId);
+		model.addAttribute("roomDto", roomDto);
+		return "room/room_update";
 	}
 	
 	@PostMapping
