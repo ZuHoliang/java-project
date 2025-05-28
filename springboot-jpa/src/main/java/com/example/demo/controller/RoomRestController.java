@@ -32,7 +32,7 @@ DELETE /rest/room/{roomId} 刪除指定房間資料 roomId (路徑參數，房�
 */
 
 @RestController
-@RequestMapping("/rest/room")
+@RequestMapping(value = {"/rest/room", "/rest/rooms"})
 @CrossOrigin(origins = {"http://localhost:5173","http://localhost:8001"}, allowCredentials = "true")
 public class RoomRestController {
 	
@@ -64,7 +64,7 @@ public class RoomRestController {
 	//更新指定房間資料
 	@PutMapping("/{roomId}")
 	public ResponseEntity<ApiResponse<RoomDto>> updateRoom(@PathVariable Integer roomId,@RequestBody RoomDto roomDto){
-		roomService.addRoom(roomDto);
+		roomService.updateRoom(roomId, roomDto);
 		return ResponseEntity.ok(ApiResponse.success("Room 修改成功", roomDto));
 	}
 	
