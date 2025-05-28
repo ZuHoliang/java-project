@@ -35,6 +35,7 @@ public class RoomController {
 		return "room/room";
 	}
 	
+	//查詢
 	@GetMapping("/{roomId}")
 	public String getRoom(@PathVariable Integer roomId, Model model) {
 		RoomDto roomDto = roomService.getRoomById(roomId);
@@ -42,6 +43,7 @@ public class RoomController {
 		return "room/room_update";
 	}
 	
+	//新增
 	@PostMapping
 	public String addRoom(@ModelAttribute @Valid RoomDto roomDto, BindingResult bindingResult, Model model) {
 		if(bindingResult.hasErrors()) {
@@ -53,6 +55,7 @@ public class RoomController {
 		return "redirect:/rooms";
 	}
 	
+	//修改
 	@PutMapping("/update/{roomId}")
 	public String updateRoom(@PathVariable Integer roomId, @Valid RoomDto roomDto, BindingResult bindingResult) {
 		if(bindingResult.hasErrors()) {
@@ -63,12 +66,14 @@ public class RoomController {
 		return "redirect:/rooms";
 	}
 	
+	//刪除
 	@DeleteMapping("/delete/{roomId}")
 	public String deleteRoom(@PathVariable Integer roomId) {
 		roomService.deleteRoom(roomId);
 		return "redirect:/rooms";
 	}
 	
+	//錯誤
 	@ExceptionHandler({Exception.class})
 	public String handleException(Exception e, Model model) {
 		e.printStackTrace();
