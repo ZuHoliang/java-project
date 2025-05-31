@@ -22,7 +22,7 @@ public class RoomServiceImpl implements RoomService{
 	
 	@Autowired
 	private RoomMapper roomMapper;
-
+//
 	@Override
 	public List<RoomDto> findAllRooms() {
 		return roomRepository.findAll()
