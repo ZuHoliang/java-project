@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -20,6 +21,8 @@ import com.example.demo.exception.RoomException;
 import com.example.demo.model.dto.RoomDto;
 import com.example.demo.response.ApiResponse;
 import com.example.demo.service.RoomService;
+
+import jakarta.validation.Valid;
 
 /**
 請求方法 URL 路徑              功能說明      請求參數                                   回應
@@ -56,14 +59,22 @@ public class RoomRestController {
 	
 	//新增房間
 	@PostMapping
-	public ResponseEntity<ApiResponse<RoomDto>> addRoom(@RequestBody RoomDto roomDto){
+	public ResponseEntity<ApiResponse<RoomDto>> addRoom(@Valid @RequestBody RoomDto roomDto, BindingResult bindingResult){
+		if(bindingResult.hasErrors()) {
+			//return ResponseEntity.badRequest().body(ApiResponse.error(500,"新增失敗"));
+			//return ResponseEntity.ok(ApiResponse.error(500,"新增失敗:" + bindingResult.getAllErrors().get(0).getDefaultMessage()));
+			throw new RoomException("新增失敗:" + bindingResult.getAllErrors().get(0).getDefaultMessage());
+		}
 		roomService.addRoom(roomDto);
 		return ResponseEntity.ok(ApiResponse.success("Room 新增成功", roomDto));
 	}
 	
 	//更新指定房間資料
 	@PutMapping("/{roomId}")
-	public ResponseEntity<ApiResponse<RoomDto>> updateRoom(@PathVariable Integer roomId,@RequestBody RoomDto roomDto){
+	public ResponseEntity<ApiResponse<RoomDto>> updateRoom(@PathVariable Integer roomId,@Valid @RequestBody RoomDto roomDto, BindingResult bindingResult){
+		if(bindingResult.hasErrors()) {
+			throw new RoomException("修改失敗:" + bindingResult.getAllErrors().get(0).getDefaultMessage());
+		}
 		roomService.updateRoom(roomId, roomDto);
 		return ResponseEntity.ok(ApiResponse.success("Room 修改成功", roomDto));
 	}
@@ -78,7 +89,7 @@ public class RoomRestController {
 	//錯誤處理
 	@ExceptionHandler({RoomException.class})
 	public ResponseEntity<ApiResponse<Integer>> handleRoomException(RoomException e){
-		return ResponseEntity.status(500).body(ApiResponse.error(500, e.getMessage()));
+		return ResponseEntity.ok(ApiResponse.error(500, e.getMessage()));
 	}
 
 }
