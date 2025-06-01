@@ -14,6 +14,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/user/authcode")
 public class AuthCodeServlet extends HttpServlet {
@@ -36,7 +37,9 @@ public class AuthCodeServlet extends HttpServlet {
 		Random random = new Random();
 //		String authcode = String.format("%04d", random.nextInt(10000));
 		String authcode = generateAuthCode();
-
+		
+		HttpSession session = req.getSession();
+		session.setAttribute("authcode", session);
 		ImageIO.write(getAuthCodeImage(authcode), "JPEG", resp.getOutputStream());
 	}
 
