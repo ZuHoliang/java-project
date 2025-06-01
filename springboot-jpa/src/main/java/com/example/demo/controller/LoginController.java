@@ -35,6 +35,7 @@ public class LoginController {
 		try {
 			userCert = certService.getCert(username, password);
 		} catch (Exception e) {
+			session.invalidate();
 			//將錯誤資料丟給error.jsp
 			model.addAttribute("messsage", e.getMessage());
 			e.printStackTrace();
