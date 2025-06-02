@@ -17,10 +17,13 @@ import lombok.NoArgsConstructor;
 @Table(name = "users") //資料表命名
 public class User {
 	
-	@Id
+	@Id//主鍵
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "user_id")
 	private Integer userId;
+	
+	@Column(name = "account_id", unique = true, nullable = false)
+	private String accountId;
 	
 	@Column(name = "username", unique = false, nullable = false)
 	private String username;
@@ -31,13 +34,14 @@ public class User {
 	@Column(name = "salt", unique = false, nullable = false)
 	private String salt;
 	
-//	@Column(name = "email", nullable = false)
-//	private String email;
-
 	@Column(name = "role")
 	private String role;
 	
 	@Column(name = "active")
 	private Boolean active;
+	
+//	@Column(name = "email", nullable = false)
+//	private String email;
+
 
 }
