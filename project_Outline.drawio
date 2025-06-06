@@ -1,19 +1,22 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
   <diagram name="第 1 页" id="KcsCPuVRccA3-YZ6nfQP">
-    <mxGraphModel dx="864" dy="1086" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1471" dy="1536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="HeBUyqX_dZ0bGzKuI19q-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JKeBqNWXjQjxaJ3em_yk-1" target="JKeBqNWXjQjxaJ3em_yk-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="JKeBqNWXjQjxaJ3em_yk-1" value="首頁" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="325" y="5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="JKeBqNWXjQjxaJ3em_yk-2" value="簽到頁" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="65" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="JKeBqNWXjQjxaJ3em_yk-4" value="公告" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="120" width="110" height="50" as="geometry" />
+        <mxCell id="JKeBqNWXjQjxaJ3em_yk-4" value="公告&lt;br&gt;首頁顯示最新5條" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="245" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="JKeBqNWXjQjxaJ3em_yk-8" value="登入/個人資料" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="JKeBqNWXjQjxaJ3em_yk-8" value="登入/個人資料&lt;div&gt;主要顯示是否有通知&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="590" y="10" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="JKeBqNWXjQjxaJ3em_yk-9" value="登出" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -23,25 +26,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="JKeBqNWXjQjxaJ3em_yk-11" value="權限識別" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="605" y="90" width="80" height="30" as="geometry" />
+          <mxGeometry x="600" y="100" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="JKeBqNWXjQjxaJ3em_yk-12" value="請假申請" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="490" y="380" width="90" height="40" as="geometry" />
+        <mxCell id="JKeBqNWXjQjxaJ3em_yk-12" value="換班申請" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="910" y="530" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="JKeBqNWXjQjxaJ3em_yk-14" value="編輯公告" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="700" y="320" width="90" height="40" as="geometry" />
+        <mxCell id="HeBUyqX_dZ0bGzKuI19q-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="JKeBqNWXjQjxaJ3em_yk-14" target="JKeBqNWXjQjxaJ3em_yk-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JKeBqNWXjQjxaJ3em_yk-14" value="編輯公告" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="495" y="380" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="JKeBqNWXjQjxaJ3em_yk-16" value="登出" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="630" y="600" width="50" height="30" as="geometry" />
+          <mxGeometry x="630" y="640" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="JKeBqNWXjQjxaJ3em_yk-17" value="出勤率(個人)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="490" y="430" width="90" height="40" as="geometry" />
+          <mxGeometry x="770" y="880" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="JKeBqNWXjQjxaJ3em_yk-18" value="考勤查詢" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="700" y="440" width="90" height="40" as="geometry" />
+        <mxCell id="JKeBqNWXjQjxaJ3em_yk-18" value="考勤查詢" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;dashed=1;dashPattern=1 4;" parent="1" vertex="1">
+          <mxGeometry x="530" y="860" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="JKeBqNWXjQjxaJ3em_yk-19" value="班表調整" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
-          <mxGeometry x="660" y="230" width="90" height="40" as="geometry" />
+          <mxGeometry x="590" y="500" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="JKeBqNWXjQjxaJ3em_yk-30" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
           <mxGeometry x="-20" y="-70" width="150" height="180" as="geometry">
@@ -58,13 +64,13 @@
           <mxGeometry y="20" width="360" height="70" as="geometry" />
         </mxCell>
         <mxCell id="an5DiUaol9ZiSNuQ8crz-3" value="Vertical Container" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="455" y="620" width="140" height="130" as="geometry" />
+          <mxGeometry x="750" y="710" width="140" height="130" as="geometry" />
         </mxCell>
         <mxCell id="an5DiUaol9ZiSNuQ8crz-2" value="出勤率:圓餅圖(當月)&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;請假&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;:柱狀圖(當月)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="an5DiUaol9ZiSNuQ8crz-3" vertex="1">
           <mxGeometry y="40" width="130" height="40" as="geometry" />
         </mxCell>
         <mxCell id="an5DiUaol9ZiSNuQ8crz-4" value="Vertical Container" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="700" y="620" width="140" height="130" as="geometry" />
+          <mxGeometry x="380" y="700" width="140" height="130" as="geometry" />
         </mxCell>
         <mxCell id="an5DiUaol9ZiSNuQ8crz-5" value="&lt;div&gt;出勤率:圓餅圖(當日)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="an5DiUaol9ZiSNuQ8crz-4" vertex="1">
           <mxGeometry x="5" y="50" width="130" height="30" as="geometry" />
@@ -82,19 +88,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="an5DiUaol9ZiSNuQ8crz-9" value="登入/個人資料" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="595" y="-100" width="100" height="90" as="geometry" />
+          <mxGeometry x="790" y="-180" width="110" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="an5DiUaol9ZiSNuQ8crz-10" value="&lt;div&gt;持續在右上角&lt;/div&gt;學號、頭像?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="an5DiUaol9ZiSNuQ8crz-9" vertex="1">
-          <mxGeometry y="30" width="100" height="40" as="geometry" />
+        <mxCell id="an5DiUaol9ZiSNuQ8crz-10" value="&lt;div&gt;持續在右上角&lt;/div&gt;學號、頭像?(再說" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="an5DiUaol9ZiSNuQ8crz-9" vertex="1">
+          <mxGeometry x="-10" y="40" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="an5DiUaol9ZiSNuQ8crz-17" value="修改帳號" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="700" y="380" width="90" height="40" as="geometry" />
+        <mxCell id="an5DiUaol9ZiSNuQ8crz-17" value="管理員工&lt;br&gt;(修改員工資料)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="500" y="250" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qe0T4hvB0G6LBK0HG2og-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="an5DiUaol9ZiSNuQ8crz-18" target="JKeBqNWXjQjxaJ3em_yk-19">
+        <mxCell id="HeBUyqX_dZ0bGzKuI19q-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="an5DiUaol9ZiSNuQ8crz-18" target="JKeBqNWXjQjxaJ3em_yk-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="an5DiUaol9ZiSNuQ8crz-18" value="班表" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="520" y="230" width="90" height="40" as="geometry" />
+          <mxGeometry x="590" y="440" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="an5DiUaol9ZiSNuQ8crz-21" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
           <mxGeometry x="1030" y="230" width="190" height="100" as="geometry" />
@@ -102,17 +108,17 @@
         <mxCell id="an5DiUaol9ZiSNuQ8crz-22" value="請假&lt;div&gt;管理者:請假、換班確認、準假&lt;/div&gt;&lt;div&gt;一般員工:請假、換班確認&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="an5DiUaol9ZiSNuQ8crz-21" vertex="1">
           <mxGeometry x="10" y="20" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HuT5ZroK48-bMEiyqUHC-2" value="補簽到" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="490" y="330" width="90" height="40" as="geometry" />
+        <mxCell id="HuT5ZroK48-bMEiyqUHC-2" value="補簽到" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;" parent="1" vertex="1">
+          <mxGeometry x="650" y="830" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="HuT5ZroK48-bMEiyqUHC-3" value="加班申請" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="490" y="280" width="90" height="40" as="geometry" />
+        <mxCell id="HuT5ZroK48-bMEiyqUHC-3" value="加班申請" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;" parent="1" vertex="1">
+          <mxGeometry x="650" y="890" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HuT5ZroK48-bMEiyqUHC-5" value="通知:&lt;br&gt;請求換班&lt;br&gt;未簽到" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="585" y="160" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="qe0T4hvB0G6LBK0HG2og-1" value="修改個人帳號" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="490" width="90" height="40" as="geometry" />
+        <mxCell id="qe0T4hvB0G6LBK0HG2og-1" value="修改個人帳號" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="250" width="90" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
